@@ -1,0 +1,72 @@
+:root {
+  /* GLOBAL COLOURS - Colours and colournames from palette designed using https://coolors.co/ */
+  --rich-black: #091111;
+  --navajo-white: #ffe0b5;
+  --red-salsa: #fb3640;
+  --teal: #218380;
+  --lapis-lazulis: #38618c;
+  --ghost-white: #F2F2F8;
+
+}
+
+/*--------------------Global styling--------------------*/
+body {
+background-color: var(--rich-black);
+}
+
+/* unvisited link */
+a:link {
+    color: var(--ghost-white);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: var(--ghost-white);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: var(--navajo-white);
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+
+/*--------------------LANDING PAGE--------------------*/
+
+/* SOCIAL LINKS */
+#landing>#landing-social > #landing-social{
+    font-family: 'Roboto', sans-serif;
+    color: var(--ghost-white);
+}
+
+#landing-social > #landing-social-contact{
+color: var(--red-salsa);
+}
+
+/* NAV LINKS */
+#landing-nav {
+    font-family: 'Lato', sans-serif;
+}
+#landing-nav>#landing-nav-project{
+    color: var(--red-salsa);
+}
+/* HEADING */
+#landing-title > #landing-title-main{
+    font-family: 'Lato', sans-serif;
+    color: var(--ghost-white);
+}
+
+#landing-title>#landing-title-sub{
+    font-family: 'Roboto', sans-serif;
+    color: var(--teal);
+}
+/*--------------------PROJECTS SCROLLTO--------------------*/
+/*--------------------ABOUT SCROLLTO--------------------*/
+
+
+/*--------------------CV SCROLLTO--------------------*/
+/* CONTACT SECTION */
