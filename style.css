@@ -1,3 +1,7 @@
+*, *::before, *::after{
+
+  box-sizing: border-box;
+}
 :root {
   /* GLOBAL COLOURS - Colours and colournames from palette designed using https://coolors.co/ */
   --rich-black: #091111;
@@ -11,7 +15,10 @@
 
 /*--------------------Global styling--------------------*/
 body {
-background-color: var(--rich-black);
+margin: 0;
+  background-color: var(--rich-black);
+background: linear-gradient(to right,  #091111,#293535);
+
 }
 
 /* unvisited link */
