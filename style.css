@@ -4,8 +4,8 @@
   --rich-black: #091111;
   --navajo-white: #ffe0b5;
   --red-salsa: #fb3640;
-  --teal: #218380;
-  --lapis-lazulis: #38618c;
+  --dark-slate-grey: #27474E;
+  --russian-green: #5E8C61;
   --ghost-white: #f2f2f8;
 }
 
@@ -53,6 +53,11 @@ a:active {
 .landing-page-top{
   height: 15vh;
 }
+
+.landing-page-sub > .landing-page-sub-right > .landing-page-sub > h6{
+  display: flex;
+  justify-content: right;
+align-items:flex-end;}
 
 .landing-page-nav-col{
   width: 33vw;
