@@ -1,11 +1,10 @@
-
 :root {
   /* GLOBAL COLOURS - Colours and colournames from palette designed using https://coolors.co/ */
   --rich-black: #091111;
   --navajo-white: #ffe0b5;
   --red-salsa: #fb3640;
-  --dark-slate-grey: #27474E;
-  --russian-green: #5E8C61;
+  --dark-slate-grey: #27474e;
+  --russian-green: #5e8c61;
   --ghost-white: #f2f2f8;
 }
 
@@ -16,7 +15,7 @@
   height: 100vh;
   color: #f2f2f8;
 }
-.container-fluid {
+/* .container-fluid {
   border: thin solid red;
 }
 .col{
@@ -24,7 +23,7 @@
 }
 .row{
   border: thin solid lightblue;
-}
+} */
 
 /* unvisited link */
 a:link {
@@ -47,26 +46,90 @@ a:active {
 }
 
 /*--------------------LANDING PAGE--------------------*/
-.landing-page{
-  height: 100vh;
-}
-.landing-page-top{
+
+#landing-page-top {
   height: 15vh;
 }
+#landing-page-title {
+  background-color: var(--russian-green);
+  border: thin solid var(--navajo-white);
+}
+#landing-page-sub-blank-right {
+  height: 7vh;
+}
+#landing-page-sub {
+  background-color: var(--russian-green);
+  border: thin solid var(--navajo-white);
+}
+#landing-page-nav-col-blank {
+  height: auto;
+}
 
-.landing-page-sub > .landing-page-sub-right > .landing-page-sub > h6{
-  display: flex;
-  justify-content: right;
-align-items:flex-end;}
+#landing-page-sub-bottom-blank {
+  height: 5vh;
+}
 
-.landing-page-nav-col{
+#linked-in-link {
+  padding-top: 20%;
+}
+#github-link {
+  padding-bottom: 20%;
+}
+#linkedin-link-img {
+  height: 25px;
+  width: 25px;
+  background-color: #f2f2f8;
+}
+#github-link-img {
+  height: 25px;
+  width: 25px;
+  background-color: #f2f2f8;
+}
+
+.landing-page-nav-col {
   width: 33vw;
 }
-.landing-page-nav-col-blank{
+.landing-page-nav-col-blank {
   width: 66vw;
 }
 
+#portfolio-btn-top-blank {
+  height: 8vh;
+}
 
+#portfolio-btn-bottom-blank {
+  height: 10vh;
+}
+/*--------------------NAV BTNS--------------------*/
+
+#lets-work-btn {
+  background-color: var(--rich-black);
+  border: thin solid var(--navajo-white);
+  color: var(--ghost-white);
+  margin: 10px;
+  font-size: smaller;
+}
+
+#about-btn {
+  background-color: var(--rich-black);
+  border: thin solid var(--navajo-white);
+  color: var(--ghost-white);
+  margin: 10px;
+  font-size: smaller;
+}
+#cv-btn {
+  background-color: var(--rich-black);
+  border: thin solid var(--navajo-white);
+  color: var(--ghost-white);
+  margin: 10px;
+  font-size: smaller;
+}
+
+#portfolio-btn {
+  background-color: #fb3640;
+  border: thin solid var(--navajo-white);
+  color: var(--rich-black);
+}
 /*------------------------------------------------------------------------*/
 
 /* SOCIAL LINKS */
@@ -101,3 +164,7 @@ align-items:flex-end;}
 
 /*--------------------CV SCROLLTO--------------------*/
 /* CONTACT SECTION */
+
+#icon-attr {
+  font-size: x-small;
+}
