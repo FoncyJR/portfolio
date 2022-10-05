@@ -50,6 +50,8 @@ a:active {
 #landing-page-top {
   height: 15vh;
 }
+
+
 #landing-page-title {
   background-color: var(--russian-green);
   border: thin solid var(--navajo-white);
@@ -76,13 +78,12 @@ a:active {
   padding-bottom: 20%;
 }
 #linkedin-link-img {
-  height: 25px;
-  width: 25px;
+  height: 3vh;
+
   background-color: #f2f2f8;
 }
 #github-link-img {
-  height: 25px;
-  width: 25px;
+height: 3vh;
   background-color: #f2f2f8;
 }
 
