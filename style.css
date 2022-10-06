@@ -12,7 +12,7 @@
 #app {
   margin: 0;
   background-color: var(--black);
-  height: 100vh;
+  height: 100%;
   color: #f2f2f8;
 }
 .container-fluid {
@@ -132,7 +132,42 @@ height: 3vh;
   color: var(--black);
 }
 /*------------------------------------------------------------------------*/
+/*-------------------- ABOUT --------------------*/
 
+#about-title-above-blank{
+  height: 5vh;
+}
+#about-title{
+  background-color: var(--primary);
+  border: thin solid var(--white-2);
+}
+#about-title-below-blank{
+  height: 5vh;
+}
+
+#about-text{
+  background-color: var(--white-2);
+  border: thin solid var(--secondary);
+  color: var(--black);
+}
+#about-img{
+  height: 20vh;
+}
+#about-main-left-blank{
+  width: 5vw;
+}
+#about-main-right-blank{
+  width: 5vw;
+}
+
+#cv-btn-top-blank-about {
+  height: 8vh;
+}
+
+#cv-btn-bottom-blank-about {
+  height: 10vh;
+}
+/*----------------------------------------------------------------------------*/
 /* SOCIAL LINKS */
 #landing > #landing-social > #landing-social {
   font-family: "Roboto", sans-serif;
