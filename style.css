@@ -1,8 +1,8 @@
 :root {
-	--primary-color: #4CAF50;
-	--secondary-color: #FFC107;
-	--text-color: #333;
-	--background-color: #fff;
+	--primary-color: #218380;
+	--secondary-color: #fb3640;
+	--text-color: #091111;
+	--background-color: #ffe0b5;
 	--font-family: 'Alegreya Sans SC', sans-serif;
 }
 
@@ -111,7 +111,14 @@ nav a:hover {
 	margin: 20px;
   }
   
+  .about-background{
+	margin-left: 5%;
+	margin-right: 5%;
+  }
 
+  #email-link{
+	color: var(--secondary-color);
+  }
 @media (min-width: 768px) {
 	#about {
 		flex-direction: row;
@@ -133,11 +140,64 @@ nav a:hover {
 /* Links */
 #links {
 	background-color: var(--background-color);
-	color: #fff;
+	color: var(--text-color);
+	text-align: center;
+	
+}
+
+#links h2{
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+#links ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+#links li {
+	padding: 10px;
+	
+}
+
+#links a {
+	color: var(--text-color);
+	text-decoration: none;
+	font-size: 28px;
+}
+
+#links a:hover {
+	text-decoration: underline;
+}
+
+.links-background{
+	margin-left: 5%;
+	margin-right: 5%;
+  }
+
+/* Technology */
+#technology {
+	background-color: var(--background-color);
+	color: var(--text-color);
 	text-align: center;
 }
 
-#links ul {
+#technology h2{
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+#technology h5{
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 20px;
+	
+}
+#technology ul {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
@@ -145,24 +205,31 @@ nav a:hover {
 	align-items: center;
 }
 
-#links li {
+#technology li {
 	padding: 10px;
 }
 
-#links a {
-	color: #fff;
+#technology a {
+	color: var(--text-color);
 	text-decoration: none;
 	font-size: 24px;
 }
 
-#links a:hover {
+#technology a:hover {
 	text-decoration: underline;
 }
 
+.technology-background{
+	margin-left: 5%;
+	margin-right: 5%;
+  }
+
+  
 /* Contact */
-#contact {
+/* #contact {
 	background-color: var(--background-color);
 	color: var(--text-color);
+	text-align: center;
 }
 
 form {
@@ -229,4 +296,9 @@ button[type=submit]:hover {
 	input, textarea {
 		flex-basis: 48%;
 	}
+} */
+
+
+#lower-buffer{
+	height: 100px;
 }
