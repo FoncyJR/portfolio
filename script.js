@@ -21,3 +21,21 @@ function stickyNavbar() {
 		navbar.classList.remove('sticky');
 	}
 }
+
+// Hamburger menu
+const hamburger = document.querySelector('.hamburger');
+const navList = document.querySelector('.nav-list');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navList.classList.toggle('active');
+});
+
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('nav');
+  if (window.scrollY > 0) {
+    nav.classList.add('sticky');
+  } else {
+    nav.classList.remove('sticky');
+  }
+});

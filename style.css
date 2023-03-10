@@ -19,43 +19,118 @@ body {
 }
 
 /* Navigation */
-nav {
+  
+  nav {
 	background-color: var(--primary-color);
 	color: #fff;
 	position: sticky;
 	top: 0;
 	z-index: 1;
-}
-
-nav ul {
-	list-style: none;
+	width: 100%;
+  }
+  
+  .nav-container {
+	max-width: 1200px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0;
 	padding: 10px;
-}
-
-nav li {
-	margin-right: 20px;
-}
-
-nav a {
-	color: #fff;
-	text-decoration: none;
+  }
+  
+  .brand a {
 	font-size: 24px;
-}
-
-nav a:hover {
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+  }
+  
+  .nav-list {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .nav-list li {
+	margin-right: 20px;
+  }
+  
+  .nav-list a {
+	font-size: calc(14px + 0.5vw);
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-list a:hover {
 	text-decoration: underline;
-}
-
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	animation: fadeInDown 0.5s;
-}
+  }
+  
+  .hamburger {
+	display: none;
+	cursor: pointer;
+	z-index: 2;
+  }
+  
+  .bar {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 6px 0;
+	transition: 0.4s;
+  }
+  
+  @media (max-width: 768px) {
+	.nav-list {
+	  display: none;
+	  flex-direction: column;
+	  position: absolute;
+	  top: 60px;
+	  left: 0;
+	  right: 0;
+	  background-color: var(--primary-color);
+	  padding: 20px;
+	}
+  
+	.nav-list li {
+	  margin-right: 0;
+	  margin-bottom: 10px;
+	}
+  
+	.nav-list a {
+	  font-size: 18px;
+	  color: #fff;
+	}
+  
+	.hamburger {
+	  display: block;
+	}
+  
+	.sticky .nav-list {
+	  display: flex;
+	  width: 100%;
+	  justify-content: center;
+	  align-items: center;
+	  flex-direction: column;
+	  top: 90px;
+	  height: calc(100vh - 90px);
+	  overflow: hidden;
+	}
+  
+	.sticky .nav-list li {
+	  margin-bottom: 30px;
+	}
+  
+	.sticky .nav-list a {
+	  font-size: 24px;
+	}
+  
+	.sticky .bar {
+	  background-color: #000;
+	}
+  }
+  
 
 /* Home */
 #home {
@@ -141,12 +216,16 @@ nav a:hover {
 .projects {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center; /* horizontally centers the panels on desktop */
+	align-items: center; /* vertically centers the panels on mobile */
+	text-align: center; /* centers the text inside the panels */
   }
   
   .project {
 	width: calc(33.33% - 20px);
 	margin-bottom: 40px;
+	border: thin solid red ;
+	width: 100%;
   }
   
   .project img {
@@ -180,10 +259,17 @@ nav a:hover {
   }
   
   @media only screen and (max-width: 768px) {
+	.projects-section {
+	  flex-direction: column; /* stacks the panels vertically on mobile */
+	  justify-content: center; /* centers the panels horizontally on mobile */
+	  align-items: center; /* centers the panels vertically on mobile */
+	}
 	.project {
 	  width: 100%;
 	}
   }
+  
+  
   
 /* Links */
 #links {
