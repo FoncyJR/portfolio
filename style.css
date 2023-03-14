@@ -224,6 +224,11 @@ nav {
   text-align: center; /* centers the text inside the panels */
 }
 
+#projects h2 {
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 20px;
+  }
 .project {
   width: calc(33.33% - 20px);
   margin-bottom: 40px;
@@ -235,7 +240,7 @@ nav {
   max-width: 100%;
 }
 
-.project h2 {
+.project h3 {
   margin-top: 10px;
   margin-bottom: 5px;
   font-size: 24px;
@@ -245,6 +250,10 @@ nav {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 10px;
+}
+
+.project li{
+	text-align: left;
 }
 
 .project a {
@@ -271,6 +280,17 @@ nav {
     width: 100%;
   }
 }
+
+.video-wrapper {
+	margin: 20px 0;
+  }
+  
+  #player1, #player2, #player3 {
+	margin: 0 auto;
+	width: 640px;
+	height: 360px;
+  }
+  
 
 /* Links */
 #links {

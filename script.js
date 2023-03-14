@@ -68,3 +68,31 @@ navList.addEventListener('click', () => {
   navList.classList.remove('active');
 });
 
+// Embedded videos
+// Load the YouTube API script
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// Create the players
+var player1, player2, player3;
+function onYouTubeIframeAPIReady() {
+  player1 = new YT.Player('player1', {
+    height: '360',
+    width: '640',
+    videoId: 'https://www.youtube.com/watch?v=NbgS9aHS1mo'
+  });
+
+  player2 = new YT.Player('player2', {
+    height: '360',
+    width: '640',
+    videoId: 'VIDEO_ID_2_HERE'
+  });
+
+  player3 = new YT.Player('player3', {
+    height: '360',
+    width: '640',
+    videoId: 'VIDEO_ID_3_HERE'
+  });
+}
