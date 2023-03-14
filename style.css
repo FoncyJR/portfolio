@@ -270,6 +270,16 @@ nav {
   background-color: #555;
 }
 
+.video-wrapper {
+	margin: 20px 0;
+  }
+  
+  #player1, #player2, #player3 {
+	margin: 0 auto;
+	max-width: 640px;
+	max-height: 360px;
+  }
+
 @media only screen and (max-width: 768px) {
   .projects-section {
     flex-direction: column; /* stacks the panels vertically on mobile */
@@ -281,15 +291,7 @@ nav {
   }
 }
 
-.video-wrapper {
-	margin: 20px 0;
-  }
-  
-  #player1, #player2, #player3 {
-	margin: 0 auto;
-	width: 640px;
-	height: 360px;
-  }
+
   
 
 /* Links */

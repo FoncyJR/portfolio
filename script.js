@@ -81,7 +81,7 @@ function onYouTubeIframeAPIReady() {
   player1 = new YT.Player('player1', {
     height: '360',
     width: '640',
-    videoId: 'https://www.youtube.com/watch?v=NbgS9aHS1mo'
+    videoId: 'NbgS9aHS1mo'
   });
 
   player2 = new YT.Player('player2', {
