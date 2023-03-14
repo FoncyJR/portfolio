@@ -234,7 +234,7 @@ nav {
   margin-bottom: 40px;
   padding-left: 5px;
   padding-right: 5px;
-  border: 2px solid var(--primary-color);
+  /* border: 2px solid var(--primary-color); */
   width: 100%;
 }
 
@@ -246,16 +246,30 @@ nav {
   margin-top: 10px;
   margin-bottom: 5px;
   font-size: 24px;
+  color: var(--primary-color);
 }
 
+.project h4{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+
+.project h5{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
 .project p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   margin-bottom: 10px;
 }
 
 .project li{
+	align-items: center; /* vertically centers the panels on mobile */
 	text-align: left;
+	
 }
 
 .project a {
