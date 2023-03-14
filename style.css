@@ -216,7 +216,7 @@ nav {
 }
 /* Projects*/
 
-.projects {
+#projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* horizontally centers the panels on desktop */
