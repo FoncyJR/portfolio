@@ -1,3 +1,6 @@
+//Favicon
+document.querySelector('link[rel="shortcut icon"]').setAttribute('href', 'assets/img/mc-logo.png');
+
 // Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	anchor.addEventListener('click', function (e) {
