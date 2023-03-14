@@ -25,17 +25,43 @@ function stickyNavbar() {
 // Hamburger menu
 const hamburger = document.querySelector('.hamburger');
 const navList = document.querySelector('.nav-list');
+const nav = document.querySelector('nav');
+
+// Hide navList on page load
+navList.classList.add('hidden');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navList.classList.toggle('active');
+  nav.classList.toggle('sticky');
 });
 
 window.addEventListener('scroll', () => {
-  const nav = document.querySelector('nav');
-  if (window.scrollY > 0) {
-    nav.classList.add('sticky');
+  if (window.innerWidth <= 768) {
+    if (window.scrollY >= 0) {
+      nav.classList.remove('sticky');
+    } 
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth < 768) {
+    navList.classList.add('hidden');
   } else {
+    navList.classList.remove('hidden');
+    hamburger.classList.remove('active');
+    navList.classList.remove('active');
     nav.classList.remove('sticky');
   }
 });
+
+hamburger.addEventListener('click', () => {
+  navList.classList.toggle('hidden');
+});
+
+navList.addEventListener('click', () => {
+  navList.classList.add('hidden');
+  hamburger.classList.remove('active');
+  navList.classList.remove('active');
+});
+
