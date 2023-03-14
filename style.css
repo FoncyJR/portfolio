@@ -86,6 +86,9 @@ nav {
   max-width: 15%;
 }
 @media (max-width: 768px) {
+	nav{
+		width: 100%;
+	}
   .nav-list {
     display: none;
     flex-direction: column;
