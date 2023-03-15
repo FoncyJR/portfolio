@@ -277,7 +277,7 @@ nav {
 }
 
 .project li {
-  align-items: center; /* vertically centers the panels on mobile */
+  align-items: center; 
   text-align: left;
   color: aliceblue;
 }
