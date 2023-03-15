@@ -142,7 +142,7 @@ nav {
 
 /* Home */
 #home {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -242,7 +242,7 @@ nav {
   /* border: 2px solid var(--primary-color); */
   width: 100%;
   background-color: var(--primary-color);
-  border-radius: 5%;
+  border-radius: 2.75%;
 }
 
 .project img {
@@ -344,6 +344,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 #links li {
@@ -388,6 +389,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 #technology li {

@@ -1,3 +1,15 @@
+// HTTPS
+// redirect HTTP requests to HTTPS
+if (location.protocol !== 'https:') {
+	location.replace(`https:${location.href.substring(location.protocol.length)}`);
+}
+
+// update internal links to use HTTPS
+document.querySelectorAll('a[href^="http://"]').forEach(link => {
+	link.href = link.href.replace(/^http:\/\//i, 'https://');
+});
+
+
 //Favicon
 document.querySelector('link[rel="shortcut icon"]').setAttribute('href', 'assets/img/mc-logo.png');
 
