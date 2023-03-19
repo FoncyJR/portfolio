@@ -9,6 +9,11 @@ document.querySelectorAll('a[href^="http://"]').forEach(link => {
 	link.href = link.href.replace(/^http:\/\//i, 'https://');
 });
 
+// redirect from markuscondren.com to www.markuscondren.com
+if (location.hostname === 'markuscondren.com') {
+	location.replace(`https://www.markuscondren.com${location.pathname}${location.search}${location.hash}`);
+}
+
 
 //Favicon
 document.querySelector('link[rel="shortcut icon"]').setAttribute('href', 'assets/img/mc-logo.png');
