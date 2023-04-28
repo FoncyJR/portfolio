@@ -27,8 +27,8 @@ nav {
   top: 0;
   z-index: 1;
   width: 100%;
-  border-bottom-left-radius: 5%;
-  border-bottom-right-radius: 5%;
+  /* border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%; */
 }
 
 .nav-container {
